@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  /* background-color: aliceblue; */
+}
+.img-magnifier-container{
+ 
+}
+.container-fluid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: aliceblue;
+  margin-bottom: 20px;
+ 
+}
+.img-magnifier-container img{
+
+}
+.images{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.small-img1{
+  width: auto;
+  overflow: hidden;
+  border: 1px solid grey;
+  margin-left: 5px;
+}
+.small-img1 img{
+  transition-duration:1s;
+}
+.small-img1:hover img{
+  transform: scale(1.1);
+  transition-duration: 1s;
+}
+.small-img1 img{
+  width: inherit;
+  
+}
+.big-img img{
+  transition-duration: 2s;
+}
+.big-img img:hover{
+  transform: scale(1.2);
+  transition-duration: 2s;
+}
+.big-img {
+  overflow: hidden;
+  transform-origin: right;
+}
+.img-magnifier-container{
+
+}
+.img-magnifier-container .col-lg-8{
+  height: 700px;
+  overflow: scroll;
+  border-left: 2px solid grey;
+  border-bottom: 2px solid grey;
+  padding-left: 20px;
+  
+}
+.type{
+  font-size: 24px!important;
+}
+.display-5{
+  font-weight: 500;
+}
+.text-decoration-line-through{
+  font-size: 24px;
+}
+.scale{
+  transition-duration: 1s;
+}
+.scale:hover{
+  transform: scale(1.2);
+}
+.button1{
+  border-radius: 5px;
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 22px;
+  transition-duration: 1s;
+}
+.button2{
+  border-radius: 5px;
+  background-color: orangered;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 22px;
+  transition-duration: 1s;
+}
+.button1:hover{
+  box-shadow: 5px 5px 10px 8px hsla(0, 0%, 0%,0.3);
+  transform: scale(1.05);
+}
+.button2:hover{
+  box-shadow: 5px 5px 10px 8px hsla(0, 0%, 0%,0.3);
+  transform: scale(1.05);
+}
+ul.mb-3 li{
+  font-weight: 500;
+}
+.fontweight{
+  font-weight: 500;
+}
+.number{
+  width: 60px;
+}
+body{
+  
+}
+.grid1{
+  display: grid;
+  place-items: center;
+  grid-template-columns: auto ;
+}
+table,th,td{
+ border: 1px solid grey;
+ padding: 5%;
+}

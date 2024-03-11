@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/returns.css">
+
+  <link rel="stylesheet" href="css/mitto3.css">
+  <script src="js/mitto.js"></script>
+</head>
+<body>
+
+  <div class="preloader">
+    <div class="loader">
+    </div>
+  </div>
+  
+  <!-- <div class="pull-to-refresh">
+    <div class="spinner-border"></div>
+  </div> -->
+  
+  
+  <div class="fixedicon fixed-bottom">
+    <ol class="row justify-content-center">
+      <a href="https://www.facebook.com" title="facebook">
+        <li><i class="fa-brands fa-facebook"></i></li>
+      </a>
+      <a href="https://www.Instagram.com" title="Instagram">
+        <li><i class="fa-brands fa-instagram"></i></li>
+      </a>
+      <a href="https://www.twitter.com" title="Twitter">
+        <li><i class="fa-brands fa-twitter"></i></li>
+      </a>
+      <a href="https://www.youtube.com" title="Youtube">
+        <li><i class="fa-brands fa-youtube"></i></li>
+      </a>
+    </ol>
+  </div>
+  
+  <div class="top1 fixed-bottom"><span><a href="returns.html" title="Go To Top"><i
+          class="fa-sharp fa-solid fa-arrow-up"></i></a></span></div>
+  
+  <!-- header navbar start -->
+  
+  <header class="header1">
+    <!-- logo start -->
+    <a href="../index.html" class="logo1">MiTtO</a>
+    <!-- Logo end -->
+    
+        <!-- mens section start -->
+        
+    <!-- <script>
+      function goTo() {
+        window.location.href = "cart.html";
+      }
+    </script> -->
+    <!-- navbar Icon Section start -->
+  
+  
+    <!-- for search list -->
+    <div class="main-div">
+      <form action="" class="search-form">
+        <input type="search" class="input" id="search-box" placeholder="search here....">
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+  
+      <!-- on search display text -start -->
+  </div>
+  <!-- on search display text -end -->
+  
+  
+    <div class="icons d-flex">
+      <div class="fas fa-bars" id="menu-btn"></div>
+      <div class="fas fa-search" id="search-btn" title="Search"></div>
+      <div class="col-md-3 d-flex justify-content-center" style="display: grid;place-items: center;">
+        <span class="pt-1 pl-0 pr-0">
+          <span class="fas fa-shopping-cart fa-1x ml-md-1" id="cart-btn" style="margin-top: -10px;">
+            <span class="badge badge-success align-self-start" id="cart_item_count"
+              style="margin-left:-20px;margin-top: -20px;position: absolute;color: black;">0</span>
+          </span>
+        </span>
+      </div>
+      <div class="fas fa-user" id="login-btn" title="login"></div>
+    </div>
+    <!--  -->
+    <div class="row pr-md-5 d-flex justify-content-center justify-content-md-end bg-info">
+      <div class="col-md-6 col-lg-5 mr-lg-5 border p-3 pb-4 rounded-lg bg-white ml-md-0" id="cart"
+        style="position: absolute;z-index: 20000;top: 80px;overflow: auto;">
+        <div class="d-flex">
+          <div class="col-md-3">
+            <h5>product</h5>
+          </div>
+          <div class="col-md-3 d-flex flex-wrap align-content-center">
+            <h5>title</h5>
+          </div>
+          <div class="col-md-3 d-flex flex-wrap align-content-center">
+            <h5>Qty</h5>
+          </div>
+          <div class="col-md-2 d-flex flex-wrap align-content-center">
+            <h5>Price</h5>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <div id="order" style="overflow: auto;height: 250px;">
+        </div>
+        <div id="cart_footer">
+          <div id="order_btn" class="text-center text-white w-100 bg-dark p-2 font-weight-bold"
+            style="letter-spacing: 1.2px;font-size: 20px;">order</div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="login-box">
+      <div class="shape1">
+  
+      </div>
+      <div class="shape2">
+  
+      </div>
+  
+      <!-- <div class="shape3">
+  
+      </div> -->
+  
+      <h2>Login</h2>
+      <form action="#" method="post">
+        <div class="user-box">
+          <input type="text" name="user" required>
+          <label>Username</label>
+        </div>
+        <div class="user-box">
+          <input type="password" name="password" required>
+          <label>Password</label>
+        </div>
+        <div class="row d-flex loginform1">
+          <a href="#" type="submit" id="signin">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <input type="submit" class="form-control" value="submit" style="background:transparent;color: aliceblue;">
+          </a>
+          <a href="surveyform2.html">
+            <input type="button" class="form-control mt-4 signup" value="Sign up">
+          </a>
+        </div>
+      </form>
+    </div>
+   
+    <!-- navbar Icon Section end -->
+  </header>
+
+
+
+    <div class="container">
+        <h1 class="fw-bold display-4 my-4">Returns And Cancellation Policy</h1>
+    <img src="Images/returns.jpg" alt="">
+    <p class="info my-3 mt-5">We will issue a product exchange for any type of product that is returned in an unused, sellable and intact condition, in its original packaging. The product has to be returned within 15 days of the delivery date. Missing out on items, wrong order or excess charges must be reported within 24 to 48 hours of delivery. We only offer exchanges; we do not offer any refunds or any type of credits.</p>
+    <p class="info my-3">Only products bought exclusively from the <strong>MiTtO</strong> site can be returned back to us. We will certainly not accept returns of products bought from any other third-party websites or physical stores. The returns form is available in my account section must be completed in order to process your return request. </p>
+    <p class="info my-3">At the same time, you can email us at <strong>mitto@sample.com</strong>. Please allow one to 2 weeks for your return to be processed, it will need to be vetted by our customer service team. You will receive a tele call or an email once your return is processed.</p>
+    <h2 class="fw-bold display-6 my-4">Terms&Conditions</h2>
+    <ul class="details">
+        <li>All returned products have to be accompanied with a copy of the original invoice.</li>
+        <li>Each item can only be exchanged once.</li>
+        <li>Shipping costs will not be refunded.</li>
+        <li>All gifts or promotional products received with your purchase must be returned with your order.</li>
+        <li>All items bought on sale are final - we cannot offer any returns or exchanges on sale products.</li>
+        <li>If the return complies with our return and exchange policy, you will be eligible to exchange the product for a product of the same or lesser value. We will not refund the difference. In the case that the items exceed the original value, you will be required to pay the difference.</li>
+        <li>Please note: Although we have tried to precisely show the actual colour of the products, there may be a minor variation based on the operating system you are using.
+        </li>
+    </ul>
+    </div>
+
+
+    <div class="container mt-5">
+      <footer class="px-3 py-2"> <!--fb,insta,tw-->
+        <div class="row d-flex footercontent">
+          <div class="col footcol">
+            <div class="row py-2">MiTtO</div>
+            <div class="row" onclick="Aboutus()">About Us</div>
+            <div class="row" onclick="Ourservice()">Our Services</div>
+            <div class="row" onclick="privacy()">Privacy Policy</div>
+            <div class="row" onclick="review()">Review</div>
+            <div class="row" data-bs-toggle="modal" data-bs-target="#myModal">Categerious</div>
+            <!--  -->
+            <div class="modal" id="myModal">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+    
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title text-success">CATEGERIOUS</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+    
+                  <!-- Modal body -->
+                  <div class="modal-body text-dark fw-bold">
+                    <ul class="d-flex">
+                      <li>Mens</li>
+                      <li>womens</li>
+                      <li>Kids</li>
+                      <li>beauty</li>
+                      <li>home</li>
+                    </ul>
+                  </div>
+    
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                  </div>
+    
+                </div>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+          <div class="col footcol">
+            <div class="row py-2">Get Help</div>
+            <div class="row" onclick="faq()">FAQ</div>
+            <div class="row" onclick="shipping()">Shipping</div>
+            <div class="row" onclick="returns()">Returns</div>
+            <div class="row" onclick="order()">Order Status</div>
+            <div class="row" onclick="Payments()">Payments</div>
+          </div>
+    
+          <div class="col footcol d-block justify-content-center">
+            <div class="row py-2">Follow Us</div>
+            <ul class="row d-flex justify-content-center">
+              <li><i class="fa-brands fa-facebook py-3 face"></i>
+                <span>facebook</span>
+              </li>
+              <li><i class="fa-brands fa-instagram py-3 insta"></i>
+                <span>Instagram</span>
+              </li>
+              <li><i class="fa-brands fa-twitter py-3 twitt"></i>
+                <span>Twitter</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-2 mb-3 widd">
+          <div class="col">@MiTtO.Ltd.2023 | all rights Reserved</div>
+          <div class="col">Terms and service | Privacy and Policy</div>
+        </div>
+      </footer>
+    </div>
+    </body>
+    <script>
+    function Aboutus(){
+      window.location.href="AboutUs.html"
+    }
+    function Ourservice() {
+      window.location.href = "ourservice.html";
+    }
+    function privacy() {
+      window.location.href = "privacy.html";
+    }
+    function review() {
+      window.location.href = "review.html";
+    }
+    function faq() {
+      window.location.href = "faq.html";
+    }
+    function shipping() {
+      window.location.href = "shipping.html";
+    }
+    function returns() {
+      window.location.href = "returns.html";
+    }
+    function order() {
+      window.location.href = "orderstatus.html";
+    }
+    function Payments() {
+      window.location.href = "payments.html";
+    }
+    
+    </script>
+    
+</body>
+</html>

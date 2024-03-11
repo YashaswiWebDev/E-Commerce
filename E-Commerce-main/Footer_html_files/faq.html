@@ -1,0 +1,372 @@
+<head>
+    <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/faq.css">
+  <link rel="stylesheet" href="css/mitto3.css">
+  <script src="js/mitto.js"></script>
+</head>
+
+<div class="preloader">
+  <div class="loader">
+  </div>
+</div>
+
+<!-- <div class="pull-to-refresh">
+  <div class="spinner-border"></div>
+</div> -->
+
+
+<div class="fixedicon fixed-bottom">
+  <ol class="row justify-content-center">
+    <a href="https://www.facebook.com" title="facebook">
+      <li><i class="fa-brands fa-facebook"></i></li>
+    </a>
+    <a href="https://www.Instagram.com" title="Instagram">
+      <li><i class="fa-brands fa-instagram"></i></li>
+    </a>
+    <a href="https://www.twitter.com" title="Twitter">
+      <li><i class="fa-brands fa-twitter"></i></li>
+    </a>
+    <a href="https://www.youtube.com" title="Youtube">
+      <li><i class="fa-brands fa-youtube"></i></li>
+    </a>
+  </ol>
+</div>
+
+<div class="top1 fixed-bottom"><span><a href="faq.html" title="Go To Top"><i
+        class="fa-sharp fa-solid fa-arrow-up"></i></a></span></div>
+
+<!-- header navbar start -->
+
+<header class="header1">
+  <!-- logo start -->
+  <a href="../index.html" class="logo1">MiTtO</a>
+  <!-- Logo end -->
+  
+      <!-- mens section start -->
+      
+  <!-- <script>
+    function goTo() {
+      window.location.href = "cart.html";
+    }
+  </script> -->
+  <!-- navbar Icon Section start -->
+
+
+  <!-- for search list -->
+  <div class="main-div">
+    <form action="" class="search-form">
+      <input type="search" class="input" id="search-box" placeholder="search here....">
+      <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <!-- on search display text -start -->
+</div>
+<!-- on search display text -end -->
+
+
+  <div class="icons d-flex">
+    <div class="fas fa-bars" id="menu-btn"></div>
+    <div class="fas fa-search" id="search-btn" title="Search"></div>
+    <div class="col-md-3 d-flex justify-content-center" style="display: grid;place-items: center;">
+      <span class="pt-1 pl-0 pr-0">
+        <span class="fas fa-shopping-cart fa-1x ml-md-1" id="cart-btn" style="margin-top: -10px;">
+          <span class="badge badge-success align-self-start" id="cart_item_count"
+            style="margin-left:-20px;margin-top: -20px;position: absolute;color: black;">0</span>
+        </span>
+      </span>
+    </div>
+    <div class="fas fa-user" id="login-btn" title="login"></div>
+  </div>
+  <!--  -->
+  <div class="row pr-md-5 d-flex justify-content-center justify-content-md-end bg-info">
+    <div class="col-md-6 col-lg-5 mr-lg-5 border p-3 pb-4 rounded-lg bg-white ml-md-0" id="cart"
+      style="position: absolute;z-index: 20000;top: 80px;overflow: auto;">
+      <div class="d-flex">
+        <div class="col-md-3">
+          <h5>product</h5>
+        </div>
+        <div class="col-md-3 d-flex flex-wrap align-content-center">
+          <h5>title</h5>
+        </div>
+        <div class="col-md-3 d-flex flex-wrap align-content-center">
+          <h5>Qty</h5>
+        </div>
+        <div class="col-md-2 d-flex flex-wrap align-content-center">
+          <h5>Price</h5>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+      <div id="order" style="overflow: auto;height: 250px;">
+      </div>
+      <div id="cart_footer">
+        <div id="order_btn" class="text-center text-white w-100 bg-dark p-2 font-weight-bold"
+          style="letter-spacing: 1.2px;font-size: 20px;">order</div>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  <div class="login-box">
+    <div class="shape1">
+
+    </div>
+    <div class="shape2">
+
+    </div>
+
+    <!-- <div class="shape3">
+
+    </div> -->
+
+    <h2>Login</h2>
+    <form action="#" method="post">
+      <div class="user-box">
+        <input type="text" name="user" required>
+        <label>Username</label>
+      </div>
+      <div class="user-box">
+        <input type="password" name="password" required>
+        <label>Password</label>
+      </div>
+      <div class="row d-flex loginform1">
+        <a href="#" type="submit" id="signin">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <input type="submit" class="form-control" value="submit" style="background:transparent;color: aliceblue;">
+        </a>
+        <a href="surveyform2.html">
+          <input type="button" class="form-control mt-4 signup" value="Sign up">
+        </a>
+      </div>
+    </form>
+  </div>
+ 
+  <!-- navbar Icon Section end -->
+</header>
+
+
+
+<div class="container">
+    <div class="row1">
+        <h1 class="text-center my-4 text-light fw-bold" data-text="MiTtO FAQ">MiTtO FAQ</h1>
+    </div>
+<div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+         <p class="h4"> Why do I see different prices for the same product?</p>
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body text-dark">
+         <p class="h6"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam culpa ab explicabo expedita minima et similique aut voluptatem reprehenderit at, animi voluptatibus fuga unde totam voluptates sequi hic rem eius.</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <p class="h4">Is installation offered for all products?</p>
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body text-dark">
+   <p class="h6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur adipisci voluptatibus quibusdam impedit accusantium sint laborum delectus, ab provident laboriosam voluptatem, culpa necessitatibus officiis id? Vitae iure architecto impedit officiis?</p>   
+         </div>
+      </div>
+    </div>
+    <div class="accordion-item text-light">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <p class="h4">  What does 'Out of Stock' mean?</p>
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body text-dark">
+        <p class="h6">  An item is marked as 'Out of stock' when it is not available with any sellers at the moment; you won't be able to buy it now. Use 'Notify Me' feature to know once it's available with sellers for purchase.  </p>   
+           </div>
+      </div>
+    </div>
+    <div class="accordion-item text-light">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree1" aria-expanded="false" aria-controls="collapseThree1">
+        <p class="h4">  How will I identify a genuine appointment letter?</p>
+        </button>
+      </h2>
+      <div id="collapseThree1" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body text-dark">
+        <p class="h6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta repudiandae nemo voluptatem totam, praesentium sequi cupiditate mollitia animi voluptatibus ad perferendis expedita, magnam esse molestias? Excepturi expedita quam eos odit?
+        Ullam praesentium expedita sed. Veritatis alias eligendi corrupti cum quam placeat nulla eius perferendis, quasi omnis, deleniti dolores accusantium odio blanditiis sapiente, cupiditate distinctio ratione saepe recusandae qui suscipit? Esse. </p>   
+           </div>
+      </div>
+    </div>
+    <div class="accordion-item text-light">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+        <p class="h4">Where should I self-ship the Returns?</p>
+        </button>
+      </h2>
+      <div id="collapseThree2" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body text-dark">
+        <p class="h6"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque culpa officia saepe et blanditiis cupiditate repellat ut assumenda, tempora delectus voluptatibus dolorum error atque voluptatum animi labore nisi ab hic.</p>   
+       </div>
+      </div>
+    </div>
+    <div class="accordion-item text-light">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+        <p class="h4"> I have accumulated Mitto Points in my account. How can I redeem them?</p>
+        </button>
+      </h2>
+      <div id="collapseThree3" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body text-dark">
+        <p class="h6"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime et veniam tempore veritatis fugiat. Facere voluptatem excepturi alias cumque maiores omnis ut, impedit rerum, assumenda, tempore unde odit aliquam quisquam.
+        Dolor voluptatibus est necessitatibus aperiam accusamus, magni quasi? Vel cumque, blanditiis totam enim sapiente ducimus eum quod nisi! Enim tempora quidem nemo ex neque consequatur expedita cumque reprehenderit placeat impedit. </p>   
+           </div>
+      </div>
+    </div>
+    <div class="accordion-item text-light">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree4" aria-expanded="false" aria-controls="collapseThree4">
+        <p class="h4">  How do I cancel the order, I have placed?</p>
+        </button>
+      </h2>
+      <div id="collapseThree4" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body text-dark">
+        <p class="h6">  Order can be canceled till the same is out for delivery. Note: This may not be applicable for certain logistics partner. You would see an option to cancel within 'My Orders' section under the main menu of your App/Website/M-site then select the item or order you want to cancel. In case you are unable to cancel the order from'My Orders' section, you can refuse it at the time of delivery and refund will be processed into the source account, if order amount was paid online. </p>   
+           </div>
+      </div>
+    </div>
+    <div class="accordion-item text-light">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree5" aria-expanded="false" aria-controls="collapseThree5">
+        <p class="h4"> I have created a Return request. When will the product be picked up?</p>
+        </button>
+      </h2>
+      <div id="collapseThree5" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body text-dark">
+        <p class="h6"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dignissimos placeat mollitia maiores optio quia praesentium ipsam voluptas eveniet quis corporis minus, similique enim, earum ullam vero inventore quas nisi? </p>   
+           </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="container mt-5">
+    <footer class="px-3 py-2"> <!--fb,insta,tw-->
+      <div class="row d-flex footercontent">
+        <div class="col footcol">
+          <div class="row py-2">MiTtO</div>
+          <div class="row" onclick="Aboutus()">About Us</div>
+          <div class="row" onclick="Ourservice()">Our Services</div>
+          <div class="row" onclick="privacy()">Privacy Policy</div>
+          <div class="row" onclick="review()">Review</div>
+          <div class="row" data-bs-toggle="modal" data-bs-target="#myModal">Categerious</div>
+          <!--  -->
+          <div class="modal" id="myModal">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+  
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title text-success">CATEGERIOUS</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+  
+                <!-- Modal body -->
+                <div class="modal-body text-dark fw-bold">
+                  <ul class="d-flex">
+                    <li>Mens</li>
+                    <li>womens</li>
+                    <li>Kids</li>
+                    <li>beauty</li>
+                    <li>home</li>
+                  </ul>
+                </div>
+  
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+        <div class="col footcol">
+          <div class="row py-2">Get Help</div>
+          <div class="row" onclick="faq()">FAQ</div>
+          <div class="row" onclick="shipping()">Shipping</div>
+          <div class="row" onclick="returns()">Returns</div>
+          <div class="row" onclick="order()">Order Status</div>
+          <div class="row" onclick="Payments()">Payments</div>
+        </div>
+  
+        <div class="col footcol d-block justify-content-center">
+          <div class="row py-2">Follow Us</div>
+          <ul class="row d-flex justify-content-center">
+            <li><i class="fa-brands fa-facebook py-3 face"></i>
+              <span>facebook</span>
+            </li>
+            <li><i class="fa-brands fa-instagram py-3 insta"></i>
+              <span>Instagram</span>
+            </li>
+            <li><i class="fa-brands fa-twitter py-3 twitt"></i>
+              <span>Twitter</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-2 mb-3 widd">
+        <div class="col">@MiTtO.Ltd.2023 | all rights Reserved</div>
+        <div class="col">Terms and service | Privacy and Policy</div>
+      </div>
+    </footer>
+  </div>
+  </body>
+  <script>
+  function Aboutus(){
+    window.location.href="AboutUs.html"
+  }
+  function Ourservice() {
+    window.location.href = "ourservice.html";
+  }
+  function privacy() {
+    window.location.href = "privacy.html";
+  }
+  function review() {
+    window.location.href = "review.html";
+  }
+  function faq() {
+    window.location.href = "faq.html";
+  }
+  function shipping() {
+    window.location.href = "shipping.html";
+  }
+  function returns() {
+    window.location.href = "returns.html";
+  }
+  function order() {
+    window.location.href = "orderstatus.html";
+  }
+  function Payments() {
+    window.location.href = "payments.html";
+  }
+  
+  </script>
+  

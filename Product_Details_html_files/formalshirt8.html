@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/tshirtone.css">
+    <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  
+    <link rel="stylesheet" href="css/privacy.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/mitto3.css">
+    <script src="js/mitto.js"></script>
+    
+</head>
+
+<body>
+  <div class="preloader">
+    <div class="loader">
+    </div>
+  </div>
+  
+  <!-- <div class="pull-to-refresh">
+    <div class="spinner-border"></div>
+  </div> -->
+  
+  
+  <div class="fixedicon fixed-bottom">
+    <ol class="row justify-content-center">
+      <a href="https://www.facebook.com" title="facebook">
+        <li><i class="fa-brands fa-facebook"></i></li>
+      </a>
+      <a href="https://www.Instagram.com" title="Instagram">
+        <li><i class="fa-brands fa-instagram"></i></li>
+      </a>
+      <a href="https://www.twitter.com" title="Twitter">
+        <li><i class="fa-brands fa-twitter"></i></li>
+      </a>
+      <a href="https://www.youtube.com" title="Youtube">
+        <li><i class="fa-brands fa-youtube"></i></li>
+      </a>
+    </ol>
+  </div>
+  
+  <div class="top1 fixed-bottom"><span><a href="tshirtone.html" title="Go To Top"><i
+          class="fa-sharp fa-solid fa-arrow-up"></i></a></span></div>
+  
+  <!-- header navbar start -->
+  
+  <header class="header1">
+    <!-- logo start -->
+    <a href="../index.html" class="logo1">MiTtO</a>
+    <!-- Logo end -->
+    
+        <!-- mens section start -->
+        
+    <!-- <script>
+      function goTo() {
+        window.location.href = "cart.html";
+      }
+    </script> -->
+    <!-- navbar Icon Section start -->
+  
+  
+    <!-- for search list -->
+    <div class="main-div">
+      <form action="" class="search-form">
+        <input type="search" class="input" id="search-box" placeholder="search here....">
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+  
+      <!-- on search display text -start -->
+  </div>
+  <!-- on search display text -end -->
+  
+  
+    <div class="icons d-flex">
+      <div class="fas fa-bars" id="menu-btn"></div>
+      <div class="fas fa-search" id="search-btn" title="Search"></div>
+      <div class="col-md-3 d-flex justify-content-center" style="display: grid;place-items: center;">
+        <span class="pt-1 pl-0 pr-0">
+          <span class="fas fa-shopping-cart fa-1x ml-md-1" id="cart-btn" style="margin-top: -10px;">
+            <span class="badge badge-success align-self-start" id="cart_item_count"
+              style="margin-left:-20px;margin-top: -20px;position: absolute;color: black;">0</span>
+          </span>
+        </span>
+      </div>
+      <div class="fas fa-user" id="login-btn" title="login"></div>
+    </div>
+    <!--  -->
+    <div class="row pr-md-5 d-flex justify-content-center justify-content-md-end">
+      <div class="col-md-6 col-lg-5 mr-lg-5 border p-3 pb-4 rounded-lg bg-white ml-md-0" id="cart"
+        style="position: absolute;z-index: 20000;top: 80px;overflow: auto;">
+        <div class="d-flex">
+          <div class="col-md-3">
+            <h5>product</h5>
+          </div>
+          <div class="col-md-3 d-flex flex-wrap align-content-center">
+            <h5>title</h5>
+          </div>
+          <div class="col-md-3 d-flex flex-wrap align-content-center">
+            <h5>Qty</h5>
+          </div>
+          <div class="col-md-2 d-flex flex-wrap align-content-center">
+            <h5>Price</h5>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <div id="order" style="overflow: auto;height: 250px;">
+        </div>
+        <div id="cart_footer">
+          <div id="order_btn" class="text-center text-white w-100 bg-dark p-2 font-weight-bold"
+            style="letter-spacing: 1.2px;font-size: 20px;">order</div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="login-box">
+      <div class="shape1">
+  
+      </div>
+      <div class="shape2">
+  
+      </div>
+  
+      <!-- <div class="shape3">
+  
+      </div> -->
+  
+      <h2>Login</h2>
+      <form action="#" method="post">
+        <div class="user-box">
+          <input type="text" name="user" required>
+          <label>Username</label>
+        </div>
+        <div class="user-box">
+          <input type="password" name="password" required>
+          <label>Password</label>
+        </div>
+        <div class="row d-flex loginform1">
+          <a href="#" type="submit" id="signin">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <input type="submit" class="form-control" value="submit" style="background:transparent;color: aliceblue;">
+          </a>
+          <a href="surveyform2.html">
+            <input type="button" class="form-control mt-4 signup" value="Sign up">
+          </a>
+        </div>
+      </form>
+    </div>
+   
+    <!-- navbar Icon Section end -->
+  </header>
+
+        <div class="container-fluid">
+          <div class="row grid1">
+            <div class="row">
+       <h1 class="my-3  mx-2 text-secondary">Product Details :</h1>
+       </div>
+        <div class="img-magnifier-container row d-flex">
+          <div class="col-lg-4" id="img">
+            <div class="big-img">
+          <img id="myimage" src="Images__/forshirt81.webp"
+          alt="..." class="d-block w-100 img-fluid">
+        </div>
+
+          <div class="images d-flex mt-2 mb-2">
+            <div class="small-img1">
+              <img src="Images__/forshirt81.webp" alt="" class="d-block w-100 img-fluid" onclick="showImg(this.src);">
+            </div>
+          <div class="small-img1">
+            <img src="Images__/forshirt82.webp" alt="" class="d-block w-100 img-fluid" onclick="showImg(this.src);">
+          </div>
+          <div class="small-img1">
+            <img src="Images__/forshirt83.webp" alt="" class="d-block w-100 img-fluid" onclick="showImg(this.src);">
+          </div>
+          <div class="small-img1">
+            <img src="Images__/forshirt84.webp" alt="" class="d-block w-100 img-fluid" onclick="showImg(this.src);">
+          </div>
+          </div>
+          </div>
+          <div class="col-lg-8">
+        <h1 class="text-secondary mb-2">REYMOND</h1>
+        <p class="type">Men Slim Fit Solid Formal Shirt</p>
+        <h4 class="text-success">special price</h4>
+        <p class="mt-3"><span class="display-5">₹839</span>&nbsp;&nbsp; <span class="text-secondary text-decoration-line-through">₹2399&nbsp;&nbsp;</span><span
+        class="type text-success"> 65% off</span></p>
+        <div class="d-flex my-2 my-4"><p class="mx-4 type">Color :</p>
+          <img src="Images__/forshirt85.webp"
+          alt="..." class="d-block mx-2 scale img-fluid" width="70px"  onclick="showImg(this.src);" >
+          <img src="Images__/forshirt86.webp"
+          alt="..." class="d-block mx-2 scale img-fluid" width="70px" onclick="showImg(this.src);">
+          <img src="Images__/forshirt87.webp"
+          alt="..." class="d-block mx-2 scale img-fluid" width="70px" onclick="showImg(this.src);">
+          <img src="Images__/forshirt88.webp"
+          alt="..." class="d-block mx-2 scale img-fluid" width="70px" onclick="showImg(this.src);">
+        </div>
+        <hr>
+        <div class="size d-flex my-4">
+        <h4 class="mx-3">Select Size:</h4>
+        <select class="p-1">
+          <option>S</option>
+          <option>M</option>
+          <option>XL</option>
+          <option>XXL</option>
+          <option>XXXL</option>
+        </select>
+      </div>
+      <div class="d-flex my-4">
+        <h4 class="mx-2">Select Quantity :</h4>
+        <input type="number" class="number p-1" min="0" max="5">
+      </div>
+        <button type="button" class="by-5 m-3 button1">Add Cart</button>
+        <button type="button" class="by-5 button2">Buy Now</button>
+        <ul class="mb-3">
+          <li><span class="type">Available Offers :</span>
+            <ul>
+              <li>Special Price Get at Flat ₹279 <span class="text-success">T&C</span></li>
+              <li>Bank OfferFlat ₹1,250 Off on HDFC Bank Credit Card EMI Trxns on orders priced between ₹15,000 to ₹39,999<span class="text-success">T&C</span></li>
+              <li>Bank OfferFlat ₹4,000 Off on HDFC Bank Credit Card EMI Trxns on orders of ₹50,000 and above<span class="text-success">T&C</span></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="fontweight">
+        <dt class="type mb-3">Product Details :</dt>
+        <dd><ul><li>This product doesn't require installation</li></ul>
+         <p class="text-secondary"> Shipping Charges For Flipkart Assured Items</p>
+         <p> Shipping charges are calculated based on the number of units, distance and delivery date.</p>
+          <p>If the total value of items is more than Rs 500, Shipping is Free
+          If the total value of items is less than Rs 500, Seller may choose to levy shipping charges
+        </p></dd>
+        </div>
+         <table cellspacing="30" cellpadding="30" border="1px solid grey">
+          <tr>
+              <th>Hem</th>
+              <td>Curved</td>
+            </tr>
+            <tr>
+              <th>Sleeve</th>
+              <td>Full Sleeve</td>
+            </tr>
+            <tr>
+              <th>Fit</th>
+              <td>Slim</td>
+            </tr>
+            <tr>
+              <th>Fabric</th>
+              <td>Pure Cotton</td>
+            </tr>
+            <tr>
+              <th>Collar</th>
+              <td>Spread</td>
+            </tr>
+            <tr>
+              <th>Suitable For</th>
+              <td>Western Wear</td>
+            </tr>
+            <tr>
+              <th>Pattern</th>
+              <td>Solid</td>
+            </tr>
+            <tr>
+              <th>Ideal For</th>
+              <td>Men</td>
+            </tr>
+            <tr>
+              <th>Style Code</th>
+              <td>RMSZ08323-R5</td>
+            </tr>
+            <tr>
+              <th>Reversible</th>
+              <td>NO</td>
+            </tr>
+          </table>
+      </div>
+      </div>
+      </div>
+      </div>
+      <script>
+        let bigImg=document.querySelector('.big-img img');
+        function showImg(pic){
+          bigImg.src=pic;
+        }
+      </script>
+        
+    </body>
+
+</html>

@@ -1,0 +1,27 @@
+img{
+    position: relative;
+    object-fit: cover;
+}
+h1{
+    position: relative;
+    font-size: 500%;
+    color: black;
+    text-shadow: 0px 0px 15px hsl(0, 0%, 10%);
+    box-shadow: 0px 0px 10px grey;
+    padding: 1vh 2vh;
+    border-radius: 10%;
+}
+p{
+    position: relative;
+    font-size: 25px;
+    padding:0 5%;
+    /* text-shadow: 0px 0px 5px hsl(0, 0%, 10%); */
+    text-indent: 120px;
+    box-shadow: 0px 0px 10px grey;
+    padding: 10px 10px;
+    font-weight: bold;
+}
+.row #center{
+    display: grid;
+    place-items: center;
+}
